@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wsn.SceneController">
+    <children>
+        <TableView fx:id="tableView" layoutX="280.0" layoutY="74.0" prefHeight="255.0" prefWidth="555.0" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn fx:id="nbitsColumn" prefWidth="126.0" text="Nbr de Bits" />
+                <TableColumn fx:id="RcodeColumn" minWidth="4.0" prefWidth="130.0" text="taux de code" />
+                <TableColumn fx:id="EamplColumn" minWidth="3.0" prefWidth="148.0" text="energie de l'amplie" />
+            <TableColumn fx:id="EnergieColumn" minWidth="3.0" prefWidth="148.0" text="energie" />
+            </columns>
+        </TableView>
+        <VBox layoutX="37.0" layoutY="101.0" prefHeight="200.0" prefWidth="239.0" spacing="5.0" GridPane.rowIndex="1">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr de Bits (n)" />
+                <TextField fx:id="n" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="taux de code (Rc)" />
+                <TextField fx:id="Rcode" prefHeight="24.0" prefWidth="216.0" />
+                <Text layoutX="10.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="energie de l'amplie" />
+                <TextField fx:id="Eampl" />
+                <Button mnemonicParsing="false" onAction="#submit1" prefHeight="25.0" prefWidth="271.0" text="Submit" textFill="#009a00">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            </children>
+        </VBox>
+        <Button layoutX="276.0" layoutY="365.0" mnemonicParsing="false" onAction="#removeCustomer" prefHeight="32.0" prefWidth="112.0" text="Remove" textFill="RED" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="723.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="32.0" prefWidth="112.0" text="Next" textAlignment="CENTER" textFill="#2002ff" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="365.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="32.0" prefWidth="112.0" text="Back" textFill="#2200ff" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" layoutX="38.0" layoutY="307.0" prefHeight="16.0" prefWidth="268.0" textFill="RED" />
+    </children>
+</AnchorPane>

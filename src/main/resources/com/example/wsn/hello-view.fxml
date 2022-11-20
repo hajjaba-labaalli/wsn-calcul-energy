@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wsn.SceneController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="559.0" minWidth="10.0" prefWidth="512.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="299.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <GridPane.margin>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </GridPane.margin>
+    <Button mnemonicParsing="false" onAction="#switchToScene2" prefHeight="31.0" prefWidth="111.0" text="Next" textFill="#3c00ff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+    </Button>
+    <Label alignment="CENTER" depthTest="ENABLE" graphicTextGap="6.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="184.0" text="Welcome" textAlignment="CENTER" textFill="RED" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <font>
+         <Font name="Chilanka Regular" size="36.0" />
+      </font></Label>
+    <TextField fx:id="nbrNodes" nodeOrientation="LEFT_TO_RIGHT" opacity="0.66" prefHeight="24.0" prefWidth="319.0" promptText="Entrer le nombre des noeuds ici .." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <opaqueInsets>
+          <Insets />
+        </opaqueInsets>
+    </TextField>
+    <Label layoutX="130.0" layoutY="69.0" text="Entrer le nombre de votre noeuds" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></Label>
+   <Button fx:id="submit" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="111.0" text="Submit" textAlignment="CENTER" textFill="#199423" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+   <Label layoutX="57.0" layoutY="95.0" text="Entrer l'energie initial  P(start)" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></Label>
+   <TextField fx:id="Tstart" layoutX="315.0" layoutY="91.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.66" prefHeight="24.0" prefWidth="319.0" promptText="Entrer T(start) ici ..." GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <TextField fx:id="Pstart" layoutX="315.0" layoutY="91.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.66" prefHeight="24.0" prefWidth="319.0" promptText="Entrer l'energie initial ici ..." GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <TextField fx:id="R" layoutX="315.0" layoutY="199.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.66" prefHeight="24.0" prefWidth="319.0" promptText="Entrer le débit nominal ici ..." GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <TextField fx:id="Ptxelc" layoutX="315.0" layoutY="253.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.66" prefHeight="24.0" prefWidth="319.0" promptText="Entrer la valeur de l'energie ici ..." GridPane.columnIndex="1" GridPane.rowIndex="5">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <Label layoutX="57.0" layoutY="132.0" text="Entrer T(start)" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></Label>
+   <Label layoutX="57.0" layoutY="180.0" prefHeight="16.0" prefWidth="496.0" text="Entrer l'energie qui permet d'allimenter certains circuits P(txElec)" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></Label>
+   <Label layoutX="57.0" layoutY="180.0" text="Entrer la valeur du débit nominal R" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></Label>
+   <Label fx:id="label" prefHeight="29.0" prefWidth="268.0" textAlignment="CENTER" textFill="#f80202" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+</GridPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="results" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="856.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wsn.SceneController">
+    <!--
+    <stylesheets>
+        <URL value="@resultat.css" />
+    </stylesheets>-->
+    <BarChart fx:id="BarChart" layoutX="144.0" layoutY="7.0" prefHeight="420.0" prefWidth="692.0" title="Results">
+        <xAxis>
+            <CategoryAxis fx:id="caNoeud" label="Nodes" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="caEnergie" label="Energy" side="LEFT" tickLabelFill="RED" />
+        </yAxis>
+    </BarChart>
+   <Button layoutX="36.0" layoutY="100.0" mnemonicParsing="false" onAction="#initialize1" prefHeight="36.0" prefWidth="93.0" text="Show" textFill="#f800aa" />
+   <Button layoutX="36.0" layoutY="249.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="36.0" prefWidth="93.0" text="Back" textFill="#3c03f5" />
+   <Label fx:id="label2" layoutX="14.0" layoutY="20.0" prefHeight="16.0" prefWidth="184.0" textAlignment="CENTER" textFill="RED" />
+</AnchorPane>
